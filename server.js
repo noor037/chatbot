@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL_NAME = "gemini-2.0-flash"; // You can also try "gemini-1.5-pro" or "gemini-1.5-flash"
+const MODEL_NAME = "gemini-2.0-flash"; 
 
 async function runChat(userInput) {
   const genAI = new GoogleGenerativeAI(API_KEY);
